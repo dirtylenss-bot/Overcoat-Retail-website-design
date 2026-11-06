@@ -602,7 +602,7 @@ inventoryProducts.forEach(product => {
 (() => {
   const hero = document.querySelector('.hero');
   if (!hero) return;
-  const images = ["Screenshot 2026-11-06 at 12.19.49.png","Screenshot 2026-11-06 at 12.41.12.png","Screenshot 2026-11-06 at 14.16.29.png","Screenshot 2026-11-06 at 14.17.55.png","Screenshot 2026-11-06 at 14.18.36.png","Screenshot 2026-11-06 at 14.19.23.png","Screenshot 2026-11-06 at 14.19.32.png","Screenshot 2026-11-06 at 14.19.41.png","Screenshot 2026-11-06 at 14.19.53.png","Screenshot 2026-11-06 at 14.20.08.png","Screenshot 2026-11-06 at 14.20.36.png","Screenshot 2026-11-06 at 14.21.24.png","Screenshot 2026-11-06 at 14.26.53.png","Screenshot 2026-11-06 at 14.28.02.png","Screenshot 2026-11-06 at 14.28.21.png","Screenshot 2026-11-06 at 14.28.47.png","Screenshot 2026-11-04 at 13.20.08.png"];
+  const images = ["screenshot-2026-11-06-at-12.19.49.png","screenshot-2026-11-06-at-12.41.12.png","screenshot-2026-11-06-at-14.16.29.png","screenshot-2026-11-06-at-14.17.55.png","screenshot-2026-11-06-at-14.18.36.png","screenshot-2026-11-06-at-14.19.23.png","screenshot-2026-11-06-at-14.19.32.png","screenshot-2026-11-06-at-14.19.41.png","screenshot-2026-11-06-at-14.19.53.png","screenshot-2026-11-06-at-14.20.08.png","screenshot-2026-11-06-at-14.20.36.png","screenshot-2026-11-06-at-14.21.24.png","screenshot-2026-11-06-at-14.26.53.png","screenshot-2026-11-06-at-14.28.02.png","screenshot-2026-11-06-at-14.28.21.png","screenshot-2026-11-06-at-14.28.47.png","screenshot-2026-11-04-at-13.20.08.png"];
   let show = hero.querySelector('.collection-slideshow');
   if (!show) {
     show = document.createElement('div');
@@ -613,7 +613,7 @@ inventoryProducts.forEach(product => {
   images.forEach((file, index) => {
     const image = document.createElement('img');
     image.className = 'slide' + (index === 0 ? ' active' : '');
-    image.src = encodeURI('assets/images/slideshow coats/' + file);
+    image.src = 'assets/images/slideshow-coats/' + file;
     image.alt = 'Overcoats collection look ' + (index + 1);
     image.loading = index < 2 ? 'eager' : 'lazy';
     show.append(image);
