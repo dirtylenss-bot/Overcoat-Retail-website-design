@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Keep private transaction and search-result views out of search results.
+Disallow: /checkout.html
+
+Sitemap: https://www.overcoats.co.za/sitemap.xml
